@@ -1,0 +1,217 @@
+*{
+    margin: 0px;
+    padding: 0px;
+    box-sizing: border-box;
+}
+/*navigation-bar*/
+.first-container{
+    display: flex;                 
+    justify-content: space-between;
+    background-color: black;
+    position: fixed;
+    width: 100%;
+    z-index: 1;
+}
+.list{
+    list-style-type: none;
+}
+.list li{
+    float:left;
+}
+.list a{
+    display: block;
+    text-decoration: none;
+    color:white;
+    padding:15px 30px;
+}
+.list a:hover{
+    background-color: crimson;
+}
+.list i{
+    color:white;
+    margin:15px -20px;
+    cursor: pointer;
+}
+.dropdown-content {
+    display: none;
+    position: absolute;
+    background-color: #f9f9f9;
+}
+  
+.dropdown-content a {
+    color: black;
+    text-decoration: none;
+    display: block;
+    text-align: left;
+} 
+.dropdown:hover .dropdown-content {
+    display: block;
+}
+
+.search{
+    color:white;
+    padding:10px 40px;
+    font-size: 20px;
+    cursor: pointer;
+}
+.search:hover{
+    background-color:crimson;
+    transition: all ease 1s;
+} 
+.name{
+    color:white;
+    font-size: 20px;
+    position: absolute;
+    top:85%;
+    left:45%;
+}
+.name h2{
+    margin-bottom: 20px;
+    margin-left: 80px;
+}
+.the-band h1{
+    letter-spacing: 4px;
+    text-align: center;
+    margin:30px 0px;
+}
+
+.small{
+    text-align: center;
+    margin-bottom: 30px;
+}
+.large{
+    font-size: 20px;
+    word-spacing: 3px;
+    text-align: justify;
+    margin:0px auto;
+    width:50%;
+}
+.next-container{
+    margin-bottom: 30px;
+}
+
+.banner{
+    display:flex;
+    width:50%;
+    margin:0px auto;
+    justify-content: space-between;
+}
+.banner p {
+    font-size: 20px;
+    margin:30px 40px;
+}
+.first-banner img{
+    width:200px;
+    height:220px;
+}
+.next1-container{
+    background-color: black;
+}
+.nname h1{
+    color:white;
+    letter-spacing: 4px;
+    text-align: center;
+    padding:50px 0px 30px;
+}
+.nname p{
+    color:white;
+    text-align: center;
+    margin-bottom: 50px; 
+}
+.sold1{
+    width: 50%;
+    padding:10px;
+    background-color: white;
+    margin:0px auto;
+    display: flex;
+    border-bottom-style: solid;
+    border-width: 0.5px;
+}
+.sold{
+    padding:5px;
+}
+.soldout{
+    margin:0px 25px;
+    background-color: red;
+    color:white;
+    padding:5px;
+}
+.sold2 {
+    width: 50%;
+    padding:10px;
+    background-color: white;
+    margin:0px auto;
+}
+.both{
+    width:50%;
+    margin:0px auto;
+    background-color: white;
+    display: flex;
+    border-bottom-style: solid;
+    border-width: 0.5px;
+}
+.sold3{
+    margin-left:-140px;
+}
+.circle{
+    color:white;
+    margin-right:60px;
+    margin-top: 5px;
+    font-size: 20px;
+    border-bottom-style: solid;
+    background-color: black;
+    border-radius:50%;
+    width: 25px;
+    height: 25px;
+    text-align: center;
+}
+.main-cont{
+    background-color: black;
+}
+.next2-container{
+    width:53%;
+    background-color: black;
+    margin:0px auto;
+    display: flex;
+}
+
+.first-card{
+    width:50%;
+    margin:30px 20px;
+    background-color: white;
+}
+.first-name h1 {
+    font-size:20px;
+    margin: 10px;
+}
+.date{
+    margin:10px;
+}
+.para{
+    margin:10px;
+}
+.first-name button{
+    margin:10px;
+    padding:10px 30px;
+    background-color: black;
+    color:white;
+    border:none;
+    cursor: pointer;
+}
+.next2-container img{
+    width:100%;
+}
+.first-name button:hover{
+    background-color: crimson;
+}
+.cont-name{
+    width:50%;
+    margin: 70px auto;
+    text-align: center;
+}
+.cont-name h1{
+    margin:40px;
+    letter-spacing: 4px;
+}
+
+
