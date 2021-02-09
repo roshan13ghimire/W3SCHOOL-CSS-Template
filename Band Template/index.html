@@ -4,6 +4,7 @@
         <title>Music Band</title>
         <link rel = "stylesheet" href = "style.css">
         <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
     </head>
     <body>
         <div class = "main-container">
@@ -11,10 +12,10 @@
                 <div class = "nav-bar">
                     <ul class = "list">
                         <li><a href = "#">HOME</a></li>
-                        <li><a href = "#">BAND</a></li>
-                        <li><a href = "#">TOUR</a></li>
-                        <li><a href = "#">CONTACT</a></li>
-                        <li class = "dropdown">
+                        <li class = "hide"><a href = "#band">BAND</a></li>
+                        <li class = "hide"><a href = "#tour">TOUR</a></li>
+                        <li class = "hide"><a href = "#contact">CONTACT</a></li>
+                        <li class = "hide" class = "dropdown">
                             <a href = "#">MORE</a> 
                             <div class = "dropdown-content">
                                <a href = "#">Edge</a>
@@ -22,14 +23,15 @@
                                <a href = "#">Nepathye</a> 
                         </div>
                         </li> 
-                        <li><i class="fa fa-caret-down"></i> </li>
+                        <li class = "hide"><i class="fa fa-caret-down"></i> </li>
                     </ul>
                 </div>
                 <div class = "search">
                     <i class = "fa fa-search"></i>
+                    <i class="fa fa-bars"></i>
                 </div>
             </div>
-            <div class = "second-container">
+            <div class = "second-container" >
                 <img src = "img/img.jpg" width = "100%" height="100%">
                 <div class = "name">
                     <h2>Nepal</h2>
@@ -37,7 +39,7 @@
                 </div>
             </div>
         </div>
-        <div class = "next-container">
+        <div class = "next-container" id = "band">
             <div class = "the-band">
                 <h1>THE BAND</h1>
                 <p class = "small">We Love Music</p>
@@ -58,7 +60,7 @@
                 </div>
             </div>
         </div>
-        <div class ="main-cont">
+        <div class ="main-cont" id = "tour">
         <div class = "next1-container">
             <div class = "nname">
                 <h1>TOUR DATES</h1>
@@ -81,7 +83,7 @@
                 </div>
             </div>
             </div>
-        <div class = "next2-container">
+        <div class = "next2-container " id = "contact">
             <div class = "first-card">
                 <div class = "image1">
                     <img src = "img/1.jpg">
@@ -122,9 +124,31 @@
             <h1>CONTACT</h1>
             <p>Fan? Drop A Note.</p>
         </div>
-        <div class = "cont-icon">
-            
+        <div class = "both-icon">
+            <div class = "cont-icon">
+                <h3>Chicago,US</h3>
+                <h3>Phone:+00 151515</h3>
+                <h3>Email:mail@mail.com</h3>
+            </div>
+            <div class = "message">
+                <form>
+                    <input class = 'text1' type="text" placeholder="firstname">
+                    <input class = 'text1' type="text" placeholder="lastname"><br><br>
+                    <input class = 'text2' type="text" placeholder="message"><br><br>
+                    <button type="submit">SEND</button>
+                </form>
+            </div>
         </div>
     </div>
+    <div class = "map">
+        <img src = "img/map.jpg" width="100%">
+    </div>
+    <div class = "footer">
+        <i class = "fa fa-facebook"></i>
+        <i class = "fa fa-github"></i>
+        <i class = "fa fa-instagram"></i>
+        <p>Made By Roshan Ghimire</p>
+    </div>
+
     </body>
 </html>
