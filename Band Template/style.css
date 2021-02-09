@@ -11,6 +11,7 @@
     position: fixed;
     width: 100%;
     z-index: 1;
+
 }
 .list{
     list-style-type: none;
@@ -88,6 +89,7 @@
 }
 .next-container{
     margin-bottom: 30px;
+    padding:64px !important;
 }
 
 .banner{
@@ -106,6 +108,7 @@
 }
 .next1-container{
     background-color: black;
+    padding:64px !important;
 }
 .nname h1{
     color:white;
@@ -206,12 +209,58 @@
 }
 .cont-name{
     width:50%;
-    margin: 70px auto;
+    margin: 50px auto;
     text-align: center;
 }
 .cont-name h1{
     margin:40px;
     letter-spacing: 4px;
+}
+.both-icon{
+    width:50%;
+    display: flex;
+    margin:0px auto;
+}
+.cont-icon h3{
+    margin:15px 0px 0px;
+}
+.message{
+    margin-left: 170px;
+}
+.message .text1{
+    padding:10px;
+}
+.message .text2{
+    padding:8px 10px;
+    width: 100%;
+}
+.message button{
+    margin:0px 10px 80px 270px ;
+    padding:10px 30px ;
+    background-color: black;
+    color:white;
+}
+.footer{
+    width: 50%;
+    margin:50px auto;
+    font-size: 25px;;
+    margin-right: 50px;
+    letter-spacing: 3px;
+}
+i.fa.fa-bars{
+    display: none;
+}
+@media only screen and (max-width:720px)
+{
+ .nav-bar .hide{
+     display:none;
+ }
+ .search{
+     display:none;
+ }
+ i.fa.fa-bars{
+    display: block;
+}
 }
 
 
