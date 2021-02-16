@@ -1,154 +1,203 @@
 <!DOCTYPE html>
 <html>
     <head>
-        <title>Music Band</title>
+        <title>Band Template</title>
         <link rel = "stylesheet" href = "style.css">
         <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
-        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <script>
+            function myFunction() {
+              var x = document.getElementById("nav-bar");
+              if (x.className === "nav-bar") {
+                x.className += " responsive";
+              } else {
+                x.className = "nav-bar";
+              }
+            }
+            </script>
     </head>
     <body>
+      <!--
+        <div class = "nav-bar" id = "nav-bar">
+            <a href = "#" >HOME</a>
+            <a href = "#" >BAND</a>
+            <a href = "#" >TOUR</a>
+            <a href = "#" >CONTACT</a>
+            <a href = "#" >MORE <i class="fa fa-caret-down"></i></a>
+            <a class = "search"><i class = "fa fa-search"></i></a>
+            <a class = "icon" onclick="myFunction()"><i class = "fa fa-bars"></i>
+        </div>
+        -->
         <div class = "main-container">
-            <div class  = "first-container">
-                <div class = "nav-bar">
-                    <ul class = "list">
-                        <li><a href = "#">HOME</a></li>
-                        <li class = "hide"><a href = "#band">BAND</a></li>
-                        <li class = "hide"><a href = "#tour">TOUR</a></li>
-                        <li class = "hide"><a href = "#contact">CONTACT</a></li>
-                        <li class = "hide" class = "dropdown">
-                            <a href = "#">MORE</a> 
-                            <div class = "dropdown-content">
-                               <a href = "#">Edge</a>
-                               <a href = "#">1947</a>
-                               <a href = "#">Nepathye</a> 
-                        </div>
-                        </li> 
-                        <li class = "hide"><i class="fa fa-caret-down"></i> </li>
-                    </ul>
+          <div class = "first-container">
+            <div class = "nav-bar" id = "nav-bar">
+              <ul class = "list">
+                <li class = "active"><a href = "#">HOME</a></li>
+                <li><a href = "#">BAND</a></li>
+                <li><a href = "#">TOUR</a></li>
+                <li><a href = "#">CONTACT</a></li>
+                <li class = "dropdown"><a href = "#">MORE <i class="fa fa-caret-down"></i></a>
+                <div class = "dropdown-content">
+                  <a href = "#">Edge</a>
+                  <a href = "#">1947</a>
+                  <a href = "#">Nepathye</a> 
                 </div>
-                <div class = "search">
-                    <i class = "fa fa-search"></i>
-                    <i class="fa fa-bars"></i>
-                </div>
+                </li>
+              </ul>
             </div>
-            <div class = "second-container" >
-                <img src = "img/img.jpg" width = "100%" height="100%">
-                <div class = "name">
-                    <h2>Nepal</h2>
-                    <h3>Nepal is a beautiful country.</h3>
-                </div>
+            <div class = "search">
+              <a><i class = "fa fa-search"></i></a>
             </div>
+          </div>
+          <div class = "triple">
+            <a class = "icon" onclick="myFunction()"><i class = "fa fa-bars"></i>
+          </div>
+          <div class = "second-container">
+            <img class = "image" src = "img/img.jpg" width="100%" height="100%">
+            <div class = "name">
+              <h1>NEPAL</h1>
+              <p>Nepal is a beautiful country</p>
+            </div>
+          </div>
         </div>
-        <div class = "next-container" id = "band">
-            <div class = "the-band">
-                <h1>THE BAND</h1>
-                <p class = "small">We Love Music</p>
-                <p class = "large">Kunti thinks about her past when Suryadev had blessed her with a boy, Karna. Hearing the story, Priyamvada tries to console her. At Kunti's Swayamvar, Kuntibhoj informs the kings that whoever answers Kunti's question will win her hand. Who will marry her?</p>
+          <div class = "sec-main-container">
+            <div class = "sec-first-container">
+              <h1>THE BAND</h1>
+              <p class = "small">WE LOVE MUSIC</p>
+              <p class = "large">Lorem ipsum dolor sit amet consectetur adipisicing elit. Placeat earum iste expedita et esse aliquid sint atque aspernatur fuga ex vitae quam iure, repudiandae fugiat, voluptatibus sapiente tempore exercitationem! Lorem ipsum dolor sit amet consectetur adipisicing elit. Praesentium ipsam deleniti, eligendi blanditiis qui quibusdam officia autem molestiae dolores, laudantium vero tempora aliquid. Reiciendis assumenda ratione, sit nemo beatae modi. Lorem ipsum dolor sit, amet consectetur adipisicing elit. Molestiae odio facere ad dolorem distinctio dolorum accusamus culpa voluptatem quia cupiditate numquam, atque repellendus veniam aperiam consequatur dicta consectetur fuga laboriosam.</p>
             </div>
-            <div class = "banner">
-                <div class = "first-banner">
-                    <p>Name </p>
-                    <img src = "img/pic.jpg">
-                </div>
-                <div class = "first-banner">
-                    <p>Name </p>
-                    <img src = "img/pic.jpg">
-                </div>
-                <div class = "first-banner">
-                    <p>Name </p>
-                    <img src = "img/pic.jpg">
-                </div>
+            <div class = "sec-second-container">
+              <div class = "banner">
+                <h3>Name</h3>
+                <img src = "img/pic.jpg">
+              </div>
+              <div class = "banner">
+                <h3>Name</h3>
+                <img src = "img/pic.jpg">
+              </div>
+              <div class = "banner">
+                <h3>Name</h3>
+                <img src = "img/pic.jpg">
+              </div>
             </div>
-        </div>
-        <div class ="main-cont" id = "tour">
-        <div class = "next1-container">
-            <div class = "nname">
+          </div>
+          <div class = "trd-main-container">
+            <div class = "trd-first-container">
                 <h1>TOUR DATES</h1>
-                <p>Remember to book your tickets</p>
+                <p class = "trd-large">Remember to book your tickets!</p>
             </div>
-            <div class = "sold1">
-                <p class = "sold">September</p>
-                <p class = "soldout">Sold Out</p>
+            <div class = "one-div">
+              <div class = "sep">
+                <p>September</p>
+              </div>
+              <div class = "sold">
+                <p>Sold Out</p>
+              </div>
             </div>
-            <div class = "sold1">
-                <p class = "sold">November</p>
-                <p class = "soldout">Sold Out</p>
+            <div class = "one-div">
+              <div class = "sep">
+                <p>October</p>
+              </div>
+              <div class = "sold">
+                <p>Sold Out</p>
+              </div>
             </div>
-            <div class = "both">
-                <div class = "sold2">
-                    <p class = "sold3">October</p>
+            <div class = "last-div">
+              <div class = "nov">
+                <p>November</p>
+              </div>
+              <div class = "three">
+                <p>3</p>
+              </div>
+            </div>
+            <div class = "trd-second-container">
+              <div class = "f-div">
+                <img src = "img/1.jpg">
+                <h1>New York</h1>
+                <p class = "date">Fri 27 Nov 2016</p>
+                <p class="para">Praesent tincidunt sed tellus ut rutrum sed vitae justo.
+                </p>
+                <button class = "button">Buy Tickets</button>
+              </div>
+              <div class = "f-div">
+                <img src = "img/2.jpg">
+                <h1>Paris</h1>
+                <p class = "date">Sat 28 Nov 2016</p>
+                <p class="para">Praesent tincidunt sed tellus ut rutrum sed vitae justo.
+                </p>
+                <button class = "button">Buy Tickets</button>
+              </div>
+              <div class = "f-div">
+                <img src = "img/3.jpg">
+                <h1>San Francisco</h1>
+                <p class = "date">Sun 29 Nov 2016</p>
+                <p class="para">Praesent tincidunt sed tellus ut rutrum sed vitae justo.
+                </p>
+                <button class = "button">Buy Tickets</button>
+              </div>
+            </div>
+            </div>
+            <div class = "for-main-container">
+               <div class = "for-first-container">
+                 <h1>CONTACT</h1>
+                 <p>Fan? Drop a note!</p>
+               </div>
+               <div class = "for-second-container">
+                 <div class = "main">
+                  <div class = "cont">
+                     <div class = "img">
+                        <img src="img/location.png" width="20px" height="20px">
+                    </div>
+                    <div class = "c-name">
+                        <p>Imadol, Lalitpur</p>
+                    </div>
+                  </div>
+                  <div class = "cont">
+                    <div class = "img">
+                       <img src="img/mail.png" width="20px" height="20px">
+                   </div>
+                   <div class = "c-name">
+                       <p>roshan13ghimire@gmail.com</p>
+                   </div>
+                 </div>
+                 <div class = "cont">
+                  <div class = "img">
+                     <img src="img/phone.png" width="20px" height="20px">
+                 </div>
+                 <div class = "c-name">
+                     <p>+91-9052306805</p>
+                 </div>
+               </div>
+                 </div>
+                 <div class = "s-main">
+                   <div class = "sec-main">
+                  <div class = "text-field">
+                    <input class = "text1" type = "text" placeholder="Name">
+                  </div>
+                    <div class = "text-field">
+                      <input class = "text3"  type = "text" placeholder="Email">
+                    </div>
+                  </div>
+                    <div class = "text-field">
+                      <input class = "text2" type = "text" placeholder="Message">
+                      <button>SEND</button>
+                    </div>
                 </div>
-                <div class = "circle">
-                    3
                 </div>
             </div>
+            <div class = "map">
+              <img src="img/map.jpg" width="100%">
             </div>
-        <div class = "next2-container " id = "contact">
-            <div class = "first-card">
-                <div class = "image1">
-                    <img src = "img/1.jpg">
-                </div>
-                <div class = "first-name">
-                    <h1>New York</h1>
-                    <p class = "date">FRI 27 NOV 2016</p>
-                    <p class = "para">Hello,Please visit New York.It is a very nice country</p>
-                    <button type = submit>Buy Tickets</button>
-                </div>
+            <div class = "footer">
+              <div class = "icon">
+              <i class = "fa fa-facebook"></i>
+              <i class = "fa fa-github"></i>
+              <i class = "fa fa-instagram"></i>
             </div>
-            <div class = "first-card">
-                <div class = "image1">
-                    <img src = "img/2.jpg">
-                </div>
-                <div class = "first-name">
-                    <h1>New York</h1>
-                    <p class = "date">FRI 27 NOV 2016</p>
-                    <p class = "para">Hello,Please visit New York.It is a very nice country</p>
-                    <button type = submit>Buy Tickets</button>
-                </div>
+              <div class ="l-name">
+                <p>Made By Roshan Ghimire</p>
+              </div>
             </div>
-            <div class = "first-card">
-                <div class = "image1">
-                    <img src = "img/3.jpg">
-                </div>
-                <div class = "first-name">
-                    <h1>New York</h1>
-                    <p class = "date">FRI 27 NOV 2016</p>
-                    <p class = "para">Hello,Please visit New York.It is a very nice country</p>
-                    <button type = submit>Buy Tickets</button>
-                </div>
-            </div>
-        </div>
-    </div>
-    <div class = "contact">
-        <div class = "cont-name">
-            <h1>CONTACT</h1>
-            <p>Fan? Drop A Note.</p>
-        </div>
-        <div class = "both-icon">
-            <div class = "cont-icon">
-                <h3>Chicago,US</h3>
-                <h3>Phone:+00 151515</h3>
-                <h3>Email:mail@mail.com</h3>
-            </div>
-            <div class = "message">
-                <form>
-                    <input class = 'text1' type="text" placeholder="firstname">
-                    <input class = 'text1' type="text" placeholder="lastname"><br><br>
-                    <input class = 'text2' type="text" placeholder="message"><br><br>
-                    <button type="submit">SEND</button>
-                </form>
-            </div>
-        </div>
-    </div>
-    <div class = "map">
-        <img src = "img/map.jpg" width="100%">
-    </div>
-    <div class = "footer">
-        <i class = "fa fa-facebook"></i>
-        <i class = "fa fa-github"></i>
-        <i class = "fa fa-instagram"></i>
-        <p>Made By Roshan Ghimire</p>
-    </div>
 
     </body>
 </html>
