@@ -1,124 +1,176 @@
 *{
-    margin:0px;
+    margin: 0px;
     padding:0px;
     box-sizing: border-box;
 }
 .first-container{
-    display:flex;
+    display: flex;
     justify-content: space-between;
-    position: fixed;
-    width: 100%;
-    z-index: 1;
     background-color: white;
-    padding:10px;
+    position: fixed;
+    width:100%;
+    z-index:1;
 }
 .name{
-    padding:10px 30px;
-    font-size: 20px;;
     letter-spacing: 3px;
-    cursor: pointer;
+    font-size: 20px;
+    margin:10px 15px;
+    padding:10px 15px;
+    cursor:pointer;
 }
 .name:hover{
-    background-color: crimson;
+    background-color: gray;
 }
-.nav-bar li{
-    float: left;
-    padding:10px 25px;
+.nav-bar{
+    margin-top: 20px ;
+}
+.list li{
     list-style: none;
-    cursor: pointer;
+    float:left;
 }
-.nav-bar li:hover{
-    background-color: crimson;
-}
-.nav-bar a{
+.list a{
     text-decoration: none;
+    padding:10px 35px;
     color:black;
-    letter-spacing: 5px;
+    font-size: 20px; 
+    letter-spacing: 1px;  
+}
+.list a:hover{
+    background-color: gray;
 }
 .image p{
-    font-size: 40px; 
-    font-weight: 400;
-    margin-top: -80px;
-    margin-left: 40px;
+    margin-top:-70px;
+    font-size: 40px;
+    margin-left: 30px;
+    letter-spacing: 4px;
+    color:gray;
+}
+.s-main-container{
+    display: flex;
+    width:80%;
+    margin:100px auto;
+}
+.s-first-container img{
+    opacity: 0.7;
+}
+.s-second-container{
+    margin-left: 60px;
+}
+.s-second-container h1{
+    text-align:center;
+    font-size: 40px;
     letter-spacing: 4px;
 }
-.smain-container{
-    width:85%;
-    margin:100px auto;
-    display: flex;
-}
-
-.sfirst-container{
-    opacity: 0.7;
-}
-.sname{
-    margin:10px 80px;
-}
-
-.sname h1{
-    letter-spacing: 6px;
-    margin-left: 70px;
-    margin-bottom: 50px;
-}
-.sname .date{
-    letter-spacing: 6px;
+.date{
+    letter-spacing: 4px;
+    margin-top: 40px;
+    text-align: center;
     font-size: 20px;
-    margin-left: 90px;
-    margin-bottom: 50px;
 }
-.sname .para{
-    margin:-20px 0px;
-    font-size: 20px;
-    word-spacing: 3px;
+.para{
+    margin-top: 20px;
+    font-size: 22px;
     text-align: justify;
 }
-.sname .npara{
-    margin:40px 0px;
-    font-size: 20px;
-    word-spacing: 3px;
-    text-align: justify;  
+.npara{
+    margin-top:20px;
+    color:gray;
+    font-size: 22px;
 }
-.tmain-container{
-    width: 85%;
-    margin:0px auto;
-    justify-content: space-between;
+.t-main-container{
     display: flex;
+    width:80%;
+    margin:100px auto;
+    justify-content:space-between;
 }
-.tfirst-container h1{
-    margin: 50px 200px;
-    letter-spacing: 5px;
+.t-first-container h1{
+    text-align: center;
+    font-size: 40px;
+    letter-spacing: 4px;
 }
-.tfirst-container h2{
-    margin:30px;
+.menu-para{
+    margin-top:60px;
+    letter-spacing: 3px;
+    font-size: 25px;
+}
+.small-para{
+    margin-top:15px;
+    color:gray;
+}
+.image1{
+    margin-right: 50px;
+    opacity: 0.8;
+}
+.f-main-container{
+    width:80%;
+    margin:100px auto;
+}
+.f-first-container h1{
+    font-size: 40px;
     letter-spacing: 3px;
 }
-.tfirst-container p{
-    margin: 30px;
-}
-.timage{
-    opacity: 0.7;
-}
-.fmain-container{
-    width: 85%;
-    margin: 180px auto;
-}
-.ffirst-container h1{
-    letter-spacing: 3px;
-    margin-bottom: 40px;;
-}
-.small{
-    margin:40px 0px;
+.f-first-container .para{
     font-size: 20px;
+    margin-top:40px;
 }
-.stylish{
-    margin:40px 0px;
+.f-first-container .catering{
     font-size: 20px;
-    color:grey;
+    margin-top:40px;
+    color:gray;
+}
+.f-second-container{
+    margin-top:20px;
 }
 .field{
-    margin:20px;
-    width:100%;
-    height: 50px;
-    border: none;
-    border-bottom: 0.1px solid black;
+    margin:10px 0px;
+    padding:20px 5px;
+    width: 100%;
+    border:none;
+    border-bottom:1px solid gray;
+}
+.field1{
+    margin:10px 0px 40px;
+    padding:20px 5px;
+    width: 100%;
+    border:none;
+    border-bottom:1px solid gray;
+}
+.f-second-container .send{
+    padding:20px;
+    cursor: pointer;
+    font-size: 18px;
+}
+.send:hover{
+    background-color: gray;
+}
+.last-container{
+    width:30%;
+    margin:70px auto;
+}
+.last-container p{
+    font-size: 30px;
+}
+@media only screen and (max-width:720px){
+    .nav-bar{
+        display: none;
+    }
+    .s-main-container{
+        flex-direction: column-reverse;
+        width: 90%;
+    }
+    .s-first-container img{
+        margin-top:40px;
+    }
+    .s-second-container{
+        margin-right: 50px;
+    }
+    .t-main-container{
+        flex-direction: column;
+        width: 100%;
+        padding-left: 50px;
+    }
+    .image1 img{
+        margin-top:40px;
+        width: 100%;
+    }
 }
