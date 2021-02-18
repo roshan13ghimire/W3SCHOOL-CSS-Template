@@ -10,6 +10,7 @@
     position: fixed;
     width:100%;
     z-index:1;
+    box-shadow: 1px 1px gray;
 }
 .name{
     letter-spacing: 3px;
